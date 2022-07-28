@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+  overflow-x: hidden;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+section{
+  padding: 10rem 0;
+}
+section:nth-child(2n){
+  background: #f6f6f5;
+}
+
+img{
+  width: 100%;
+}
+
+/* ====================
+        Header Css 
+=======================*/
+
+header{
+    background: linear-gradient(#00000030, #00000030), url(img/main_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.5rem;
+    color: #fff;
+    font-size: 2.6rem;
+  }
+  .logo {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  nav{
+    cursor: pointer;
+  }
+
+  .headerText {
+    padding: 14rem 0;
+    color: #fff;
+  }
+  
+.headerText h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .headerText h1 {
+    font-size: 9rem;
+    margin-bottom: 2rem;
+  }
+  .headerText a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    border: .1rem solid #fff;
+    padding: 1rem 2.5rem;
+    display: inline-block;
+    margin-bottom: 3.5rem;
+  }
+
+
+
+/* ====================
+    Award Section Css 
+=======================*/
+
+
+
+.award h2 {
+  font-size: 2.8rem;
+  min-width: 40rem;
+  width: 60rem;
+  margin-bottom: 3rem;
+}
+.awardTextWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.awardLeft {
+  flex-basis: 48%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #2d2d2d;
+}
+.awardRight {
+  flex-basis: 48%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #2d2d2d;
+}
+.award a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #999;
+  transition: .4s;
+}
+.award a:hover {
+  color: #000;
+  border-bottom: .1rem solid #000;
+}
+
+
+
+/* ====================
+ Philosophy Section Css 
+=======================*/
+
+
+.philosophyWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5rem;
+}
+
+.philosophyImg {
+  flex: 65%;
+}
+.philosophyText {
+	flex-basis: 30%;
+	color: #444;
+}
+.philosophyText h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+.philosophyText p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.philosophyText a {
+  font-size: 1.4rem;
+  color: #999;
+  text-decoration: none;
+  transition: .4s;
+}
+.philosophyText a:hover {
+  color: #000;
+  border-bottom: .1rem solid #000;
+}
+
+
+
+/* ====================
+    Card Section Css 
+=======================*/
+
+
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.singleBox i {
+  font-size: 5rem;
+  color: #ddd;
+  margin-bottom: 2rem;
+}
+.singleBox h4 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+.singleBox p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #2d2d2d;
+}
+.singleBox {
+	padding: .5rem 1.5rem;
+	box-shadow: 0px 0px 3px -3px #000;
+	flex-basis: 24%;
+}
+
+
+
+
+
+/* ====================
+  Galery Section Css 
+=======================*/
+.galeryWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .1rem;
+  flex-wrap: wrap;
+}
+.singleImg {
+  flex-basis: 48%;
+  position: relative;
+}
+.singleImg img {
+  display: flex;
+}
+.singleImg::after {
+  position: absolute;
+  content: "Eco Home";
+  top: 0;
+  left: 0;
+  background: #00000060;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  opacity: 0;
+  transition: .4s;
+  box-sizing: border-box;
+  border: 1rem solid #00000090;
+}
+
+.singleImg:hover::after{
+
+  opacity: 1;
+  color: #fff;
+  
+
+}
+
+
+button {
+  width: 30rem;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  outline: none;
+  padding: 1rem 2.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  transition: .4s;
+  border: none;
+  border: .2rem soild #000;
+  transform-origin: bottom;
+  cursor: pointer;
+}
+button:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+
+
+
+/* ====================
+Latest News Section Css 
+=======================*/
+
+.latestNews {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+}
+.latestNewsCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.singleNewsCard {
+	flex-basis: 31%;
+}
+.newsCardImg {
+  margin-bottom: 2rem;
+}
+.newsCardText h3 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 1.5rem;
+}
+.newsCardText span {
+  font-size: 1.2rem;
+  color: #999;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+
+}
+.newsCardText p {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+
+
+
+footer {
+  background: #0e0e0e;
+  color: #fff;
+  padding: 10rem 0;
+}
+.footerWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footerWrapper div {
+  flex-basis: 32%;
+}
+.footerWrapper h2 {
+  font-size: 2rem;
+}
+.footerWrapper p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}

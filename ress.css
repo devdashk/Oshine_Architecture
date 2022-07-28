@@ -1,0 +1,92 @@
+@media (min-width:1024px) {
+    .container{
+        width: 95%;
+    }
+
+    .philosophyText {
+        flex-basis: 28%;
+        color: #444;
+    }
+    .philosophyImg {
+        flex: 65%;
+      }
+    
+}
+@media (max-width:1024px) {
+    .container{
+        width: 95%;
+    }
+    html{
+        font-size: 60%;
+    }
+    .philosophyText {
+        flex-basis: 100%;
+        color: #444;
+    }
+    .philosophyImg {
+        flex: 90%;
+      }
+
+}
+@media (max-width:768px) {
+    .container{
+        width: 80%;
+    }
+    html{
+        font-size: 55%;
+    }
+
+    .headerText h3{
+        font-size: 1.8rem;
+    }
+    .headerText h1{
+        font-size: 5rem;
+    }
+
+    .awardLeft {
+        flex-basis: 80%;
+      }
+      .awardRight {
+        flex-basis: 80%;
+      }
+
+      .philosophyText {
+        flex-basis: 85%;
+      }
+      .singleBox {
+        margin-bottom: 3rem;
+        box-shadow: none;
+        flex-basis: 100%;
+    }
+
+      .singleNewsCard {
+        margin-bottom: 5rem;
+        flex-basis: 100%;
+    }
+    .footerWrapper div {
+        flex-basis: 60%;
+        margin-bottom: 5rem;
+      }
+
+      .philosophyImg {
+        flex: 100%;
+      }
+
+      .philosophyText {
+        flex-basis: 100%;
+        color: #444;
+    }
+
+      
+} 
+
+
+@media (max-width:568px) {
+
+    .headerText h1 {
+        font-size: 4rem;
+    }
+    .award h2{
+        width: 40rem;
+    }
+}
